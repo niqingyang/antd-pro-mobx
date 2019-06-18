@@ -18,15 +18,14 @@
 
 ## 适合哪些人使用？
 
-1. 不喜欢`dva`，更喜欢用基于类的`mobx`做状态管理。
+1. 不喜欢`dva`，更喜欢用基于类的`mobx`做状态管理（如果对 dva 或者 umi 了解则上手更快）。
 2. 对`umi`框架不熟悉，更想直接操作 webpack。
-3. 前期不需要适配手机端，希望PC版尽快上线。
 
 ## 相比 Antd Pro，做了哪些改动
 
 1. 状态管理从`dva`换成了`mobx`，使用 mobx-react-stores 进行管理
 2. 去掉了`umi`，改成了直接操作 webpack
-3. mock 改用 @acme-top/express-mock-middleware，但使用方式和语法完全和 antd pro 的一样。
+3. mock 改用 @acme-top/express-mock-middleware，但使用方式和语法完全和 antd pro 的一样
 4. 去掉了测试相关的东西
 5. 国际化使用 react-intl，需要开发者自己注入语言包，可以从 stores 中获取 intl 对象
 6. 路由使用 mobx-react-router，可以从 stores 中获取 routing 对象
@@ -34,8 +33,4 @@
 8. 路由定义的使用方式和 antd pro 基本一致，但没有像 umi 那样去生成临时文件，而是需要直接使用 import 进行加载 ~ 支持组件的按需加载
 
 
-
-
- 
-
->此项目的目的是帮助开发者尽快完成PC网站的开发，去掉的东西后期如果需要，可以参考[Antd Pro](https://pro.ant.design/index-cn) 项目逐渐迭代回去。
+> 此项目使用方式基本与 Antd Pro 一致，可以参考[Antd Pro](https://pro.ant.design/index-cn) 项目逐渐迭代回去。
