@@ -45,7 +45,9 @@ module.exports = {
         'prefer-destructuring': 0,
         'prefer-rest-params': 0,
         'global-require': 0,
-        'compat/compat': 0
+        'compat/compat': 0,
+        // 骆驼命名
+        'camelcase': 0
     },
     settings: {
         polyfills: ['fetch', 'promises', 'url', 'object-assign'],

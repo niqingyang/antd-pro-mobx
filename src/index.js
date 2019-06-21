@@ -1,7 +1,6 @@
 // import 'react-app-polyfill/ie9';
 // import 'react-app-polyfill/stable';
 import React from 'react';
-import ReactDom from 'react-dom';
 import {LocaleProvider} from 'antd';
 import {app} from 'mobx-react-stores';
 import get from 'lodash/get';
