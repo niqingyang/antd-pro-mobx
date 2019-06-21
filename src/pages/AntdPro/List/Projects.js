@@ -16,6 +16,11 @@ const FormItem = Form.Item;
 
 /* eslint react/no-array-index-key: 0 */
 
+@inject(({stores: {dispatch, list, loading}}) => ({
+    dispatch,
+    list,
+    loading: loading.models.list,
+}))
 @Form.create({
     onValuesChange({dispatch}, changedValues, allValues) {
         // 表单项变化时请求数据
@@ -30,11 +35,6 @@ const FormItem = Form.Item;
         });
     },
 })
-@inject(({stores: {dispatch, list, loading}}) => ({
-    dispatch,
-    list,
-    loading: loading.models.list,
-}))
 @observer
 class CoverCardList extends PureComponent {
     componentDidMount() {
