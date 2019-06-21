@@ -1,10 +1,9 @@
-import {stores} from 'mobx-react-stores';
+import {stores, Locale} from 'mobx-react-stores';
 import user from './user';
 import global from './global';
 import menu from './menu';
 import setting from './setting';
 import login from './login';
-import Local from './locale';
 
 stores.add(global);
 stores.add(user);
@@ -51,6 +50,6 @@ const translations = {
     }
 };
 
-stores.add(new Local('zh-CN', translations));
+stores.add(new Locale('zh-CN', translations));
 
 export default stores;
