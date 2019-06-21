@@ -50,7 +50,7 @@
     "mobx": "^5.10.1",
     "mobx-react": "^6.0.3",
     "mobx-react-router": "^4.0.7",
-    "mobx-react-stores": "^0.2.29",
+    "mobx-react-stores": "^0.2.32",
     "moment": "^2.24.0",
     "multer": "^1.4.1",
     "mustache": "^3.0.1",
