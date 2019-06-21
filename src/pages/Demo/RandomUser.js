@@ -1,20 +1,27 @@
 import React from 'react';
-import {observable, toJS} from 'mobx'
-import {inject, observer} from 'mobx-react'
+import {inject} from 'mobx-react'
+import {toJS} from "mobx";
 
-@inject(({stores: {loading, randomUser}}) => {
+@inject(({stores: {dispatch, loading, randomUser}}) => {
     return {
+        dispatch,
         randomUser,
         loading: loading.models.randomUser
-    }
+    };
 })
-@observer
-class RandomUser extends React.Component {
+class RandomUser extends React.PureComponent {
+
+    onFetchUser = () => {
+        const {dispatch} = this.props;
+        dispatch({
+            type: 'randomUser/fetchUser'
+        })
+    }
 
     render() {
         const {loading, randomUser} = this.props;
 
-        const {user, message, fetchUser: onFetchUser} = randomUser;
+        const {user, message} = randomUser;
 
         let html = null;
 
@@ -40,7 +47,7 @@ class RandomUser extends React.Component {
                     </p>
                 </div>
             );
-        } else if(message){
+        } else if (message) {
             html = (
                 <div>
                     <p>{message}</p>
@@ -53,7 +60,7 @@ class RandomUser extends React.Component {
         return (
             <div>
                 <div>
-                    <button type='button' onClick={onFetchUser}>
+                    <button type='button' onClick={this.onFetchUser}>
                         Fetch User
                     </button>
                 </div>

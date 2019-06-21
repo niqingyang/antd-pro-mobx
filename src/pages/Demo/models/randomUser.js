@@ -1,4 +1,3 @@
-import {observable, action} from 'mobx/lib/mobx';
 import {namespace, loading} from 'mobx-react-stores';
 import {fetchRandomUser} from "@/services/demo";
 
@@ -31,13 +30,11 @@ class RandomUser {
         }
     }
 
-    @action
     change = ({user, message}) => {
         this.user = user;
         this.message = message;
     }
 
-    @action
     onRejected = (e) => {
         return {
             status: 500,
