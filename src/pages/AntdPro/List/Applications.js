@@ -12,6 +12,11 @@ import styles from './Applications.less';
 const {Option} = Select;
 const FormItem = Form.Item;
 
+@inject(({stores: {dispatch, list, loading}}) => ({
+    dispatch,
+    list,
+    loading: loading.models.list,
+}))
 @Form.create({
     onValuesChange({dispatch}, changedValues, allValues) {
         // 表单项变化时请求数据
@@ -26,11 +31,6 @@ const FormItem = Form.Item;
         });
     },
 })
-@inject(({stores: {dispatch, list, loading}}) => ({
-    dispatch,
-    list,
-    loading: loading.models.list,
-}))
 @observer
 class FilterCardList extends PureComponent {
     componentDidMount() {
