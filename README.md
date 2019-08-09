@@ -34,3 +34,7 @@
 
 
 > 此项目使用方式基本与 Antd Pro 一致，可以参考[Antd Pro](https://pro.ant.design/index-cn) 项目逐渐迭代回去。
+
+## 最后
+
+公司高层最后决定使用 VUE，痛苦中...
