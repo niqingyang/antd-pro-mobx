@@ -2,7 +2,7 @@ import {action, observable} from 'mobx';
 import {namespace, loading} from 'mobx-react-stores';
 import {queryProvince, queryCity} from '@/services/geographic';
 
-@namespace
+@namespace("geographic")
 class Geographic {
 
     @observable

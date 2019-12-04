@@ -6,7 +6,7 @@ import {setAuthority} from '@/utils/authority';
 import {getPageQuery} from '@/utils/utils';
 import {reloadAuthorized} from '@/utils/Authorized';
 
-@namespace
+@namespace("login")
 class Login {
 
     @observable

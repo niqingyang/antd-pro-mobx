@@ -4,7 +4,7 @@ import {namespace} from 'mobx-react-stores';
 
 const LOCALE = "locale";
 
-@namespace
+@namespace("locale")
 class Locale {
     @observable
     lang

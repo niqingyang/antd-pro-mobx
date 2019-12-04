@@ -2,7 +2,7 @@ import {action, observable} from "mobx";
 import {namespace, stores} from 'mobx-react-stores';
 import moment from 'moment';
 
-@namespace
+@namespace("demo")
 class Demo {
 
     @observable

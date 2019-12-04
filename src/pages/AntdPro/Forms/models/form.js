@@ -5,7 +5,7 @@ import {fakeSubmitForm} from '@/services/api';
 
 const {routing} = stores;
 
-@namespace
+@namespace("form")
 class Form {
     step = {
         payAccount: 'ant-design@alipay.com',

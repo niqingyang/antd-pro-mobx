@@ -3,7 +3,7 @@ import {namespace} from "mobx-react-stores";
 import {loading} from "mobx-loading";
 import {queryCurrent} from '../services/user';
 
-@namespace
+@namespace("user")
 class User {
 
     // 当前用户

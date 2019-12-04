@@ -2,7 +2,7 @@ import {action, observable} from "mobx";
 import {namespace, loading} from 'mobx-react-stores';
 import {queryTags} from '@/services/api';
 
-@namespace
+@namespace("monitor")
 class Monitor {
 
     tags = []

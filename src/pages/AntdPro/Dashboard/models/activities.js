@@ -2,7 +2,7 @@ import {action, observable} from "mobx";
 import {namespace, loading} from 'mobx-react-stores';
 import {queryActivities} from '@/services/api';
 
-@namespace
+@namespace("activities")
 class Activities {
 
     list = []

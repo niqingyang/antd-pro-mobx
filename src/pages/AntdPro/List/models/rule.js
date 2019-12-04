@@ -2,7 +2,7 @@ import {action, observable} from "mobx";
 import {namespace, loading} from 'mobx-react-stores';
 import {queryRule, removeRule, addRule, updateRule} from '@/services/api';
 
-@namespace
+@namespace("rule")
 class Rule {
     @observable
     data = {

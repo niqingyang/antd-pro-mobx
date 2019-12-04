@@ -2,7 +2,7 @@ import {action, observable} from "mobx";
 import {namespace, loading} from 'mobx-react-stores';
 import {fakeChartData} from '@/services/api';
 
-@namespace
+@namespace("chart")
 class Chart {
 
     visitData = [];

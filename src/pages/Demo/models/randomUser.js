@@ -1,7 +1,7 @@
 import {namespace, loading} from 'mobx-react-stores';
 import {fetchRandomUser} from "@/services/demo";
 
-@namespace
+@namespace("randomUser")
 class RandomUser {
 
     user;

@@ -18,7 +18,7 @@ function changeNotifyCount(notices) {
     });
 }
 
-@namespace
+@namespace("global")
 class Global {
 
     @observable

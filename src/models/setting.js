@@ -73,7 +73,7 @@ const updateColorWeak = colorWeak => {
     document.body.className = colorWeak ? 'colorWeak' : '';
 };
 
-@namespace
+@namespace("setting")
 class Setting {
 
     @observable

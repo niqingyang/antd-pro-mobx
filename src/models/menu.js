@@ -108,7 +108,7 @@ const getBreadcrumbNameMap = menuData => {
 
 const memoizeOneGetBreadcrumbNameMap = memoizeOne(getBreadcrumbNameMap, isEqual);
 
-@namespace
+@namespace("menu")
 class Menu {
 
     @observable

@@ -1,7 +1,7 @@
 import {observable, action} from 'mobx/lib/mobx';
 import {namespace} from 'mobx-react-stores';
 
-@namespace
+@namespace("counter")
 class Counter {
 
     @observable

@@ -4,7 +4,7 @@ import {fakeRegister} from '@/services/api';
 import {setAuthority} from '@/utils/authority';
 import {reloadAuthorized} from '@/utils/Authorized';
 
-@namespace
+@namespace("register")
 class Register {
     @observable
     status = undefined

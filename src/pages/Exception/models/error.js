@@ -2,7 +2,7 @@ import {action, observable} from "mobx";
 import {namespace} from 'mobx-react-stores';
 import queryError from '@/services/error';
 
-@namespace
+@namespace("error")
 class Error {
     @observable
     error = ''

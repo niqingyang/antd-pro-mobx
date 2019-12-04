@@ -2,7 +2,7 @@ import {action, observable} from "mobx";
 import {namespace, loading} from 'mobx-react-stores';
 import {queryBasicProfile, queryAdvancedProfile} from '@/services/api';
 
-@namespace
+@namespace("profile")
 class Profile {
 
     @observable

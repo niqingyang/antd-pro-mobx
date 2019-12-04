@@ -50,6 +50,6 @@ const translations = {
     }
 };
 
-stores.add(new Locale('zh-CN', translations));
+stores.add(new Locale('zh-CN', translations), 'locale');
 
 export default stores;
