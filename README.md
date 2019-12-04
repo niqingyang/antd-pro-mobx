@@ -37,4 +37,8 @@
 
 ## 最后
 
-公司高层最后决定使用 VUE，痛苦中...
+- 实际项目中最后却选择了 VUE 😂
+
+- 未经过实际项目检验，仅供参考 😑
+
+- 本项目 README.md 内容参考了项目 [antd-pro-mobx](https://github.com/gzgogo/antd-pro-mobx)
